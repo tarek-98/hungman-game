@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/hungman.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Hangman Game</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="container">
-        <div class="game-info">
+      <div class="row">
+        <div class="col-lg-12 col-md-6">
+          <div class="game-info">
             <div class="game-name">Hangman</div>
             <div class="category">
-                Word Form: <span></span>
+              Word Form: <span></span>
             </div>
+          </div>
         </div>
-        <hr>
-        <div class="row">
+        <div class="col-lg-12 col-md-6">
+          <div class="row">
             <div class="hangman-draw">
-                <div class="the-draw">
-                    <div class="the-stand"></div>
-                    <div class="the-hang"></div>
-                    <div class="the-rope"></div>
-                    <div class="the-man">
-                        <div class="head"></div>
-                        <div class="body"></div>
-                        <div class="hand"></div>
-                        <div class="legs"></div>
-                    </div>
+              <div class="the-draw">
+                <div class="the-stand"></div>
+                <div class="the-hang"></div>
+                <div class="the-rope"></div>
+                <div class="the-man">
+                  <div class="head"></div>
+                  <div class="body"></div>
+                  <div class="hand"></div>
+                  <div class="legs"></div>
                 </div>
+              </div>
             </div>
             <div class="letters"></div>
+          </div>
         </div>
-        <hr>
-        <div class="letters-guess"></div>
-        <audio id="success" src="audio/success-1-629.mp3" preload="auto"></audio>
-        <audio id="fail" src="audio/negative_beeps-6009.mp3" preload="auto"></audio>
+      </div>
+
+      <hr>
+      <div class="letters-guess"></div>
+      <audio id="success" src="audio/success-1-629.mp3" preload="auto"></audio>
+      <audio id="fail" src="audio/negative_beeps-6009.mp3" preload="auto"></audio>
     </div>
     <script src="js/jungman.js"></script>
-</body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+
 </html>
